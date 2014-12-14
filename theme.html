@@ -64,7 +64,7 @@
         </a>
         <div class="user-avatar-hover">
           <h3>{{ site.author }}</h3>
-          <p>{{ site.bio|striptags|truncate(280, true, '...') }}</p>
+          <p>{{ site.bio|striptags|truncate(280, false, '...') }}</p>
           <ul class="user-social-links">
             {% if site.twitter %}
             <li>
