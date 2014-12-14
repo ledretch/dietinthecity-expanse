@@ -124,9 +124,7 @@
         <div class="posts">
           {% for post in posts %}
           <div class="item">
-              <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
-              
-              {% if post.tags %}
+              <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3> {% if post.tags %}
         <ul class="post-tags">
         {% for tag in post.tags %}
           <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
