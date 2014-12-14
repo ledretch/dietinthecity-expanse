@@ -117,7 +117,7 @@
       {% if is_home or is_tag %}
 
         {% if is_tag %}
-        <h3 class="tag-header">Voici tous les billets de la catégorie "{{ tag|format_tag(False, True) }}"</h3>
+        <h3 class="tag-header">Profitez de tous les billets de la catégorie "{{ tag|format_tag(False, True) }} !"</h3>
         {% endif %}
 
         {% if posts %}
@@ -193,7 +193,7 @@
         </div>
 
         <div class="pagination">
-          <a href="javascript:history.go(-1);" class="prev">&laquo; Back To List</a>
+          <a href="javascript:history.go(-1);" class="prev">&laquo; Retour vers le futur...</a>
         </div>
 
         {% if site.disqus %}
@@ -220,7 +220,7 @@
           {{ page.content }}
         </div>
         <div class="pagination">
-          <a href="javascript:history.go(-1)" class="prev">&laquo; Back To List</a>
+          <a href="javascript:history.go(-1)" class="prev">&laquo; Retour vers le futur...</a>
         </div>
 
       {% endif %}
