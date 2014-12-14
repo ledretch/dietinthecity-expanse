@@ -147,8 +147,8 @@
         {% if not is_tag %}
         {% if pagination.next or pagination.prev %}
         <div class="pagination">
-          {% if pagination.prev %}<a href="{{ pagination.prev }}" class="prev">&laquo; +Anciens</a>{% endif %}
-          {% if pagination.next %}<a href="{{ pagination.next }}" class="next">+Recents &raquo;</a>{% endif %}
+          {% if pagination.prev %}<a href="{{ pagination.prev }}" class="prev">&laquo; +Recents</a>{% endif %}
+          {% if pagination.next %}<a href="{{ pagination.next }}" class="next">+Anciens &raquo;</a>{% endif %}
         </div>
         {% endif %}
         {% endif %}
