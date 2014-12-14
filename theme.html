@@ -128,6 +128,15 @@
               <div class="post-content" data-type-cleanup="true">
                 {{ post.content }}
               </div>
+              
+              {% if post.tags %}
+        <ul class="post-tags">
+        {% for tag in post.tags %}
+          <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+        
               <a class="post-author" href="{{ site.base_url }}">
                 {% if post.author %}
                 <img src="{{ post.author.avatar }}" />
