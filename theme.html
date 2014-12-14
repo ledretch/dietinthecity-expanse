@@ -117,7 +117,7 @@
       {% if is_home or is_tag %}
 
         {% if is_tag %}
-        <h3 class="tag-header">Voici tous les billets de la categorie "{{ tag|format_tag(False, True) }}"</h3>
+        <h3 class="tag-header">Voici tous les billets de la catégorie "{{ tag|format_tag(False, True) }}"</h3>
         {% endif %}
 
         {% if posts %}
@@ -136,7 +136,7 @@
                   {% if post.author %}
                   <span class="post-author-name">{{ post.author.name }}</span>
                   {% endif %}
-                  <span class="post-date">Posted on {{ post.created_at|format_date }}</span>
+                  <span class="post-date">Posté le {{ post.created_at|format_date }}</span>
                 </p>
               </a>
               <div class="dots"><span></span><span></span><span></span></div>
@@ -147,7 +147,7 @@
         {% if not is_tag %}
         {% if pagination.next or pagination.prev %}
         <div class="pagination">
-          {% if pagination.prev %}<a href="{{ pagination.prev }}" class="prev">&laquo; +Recents</a>{% endif %}
+          {% if pagination.prev %}<a href="{{ pagination.prev }}" class="prev">&laquo; +Récents</a>{% endif %}
           {% if pagination.next %}<a href="{{ pagination.next }}" class="next">+Anciens &raquo;</a>{% endif %}
         </div>
         {% endif %}
@@ -182,7 +182,7 @@
               {% if post.author %}
               <span class="post-author-name">{{ post.author.name }}</span>
               {% endif %}
-              <span class="post-date">Posted on {{ post.created_at|format_date }}</span>
+              <span class="post-date">Posté le {{ post.created_at|format_date }}</span>
             </p>
           </a>
           <ul class="post-options">
