@@ -125,9 +125,6 @@
           {% for post in posts %}
           <div class="item">
               <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
-              <div class="post-content" data-type-cleanup="true">
-                {{ post.content }}
-              </div>
               
               {% if post.tags %}
         <ul class="post-tags">
@@ -137,6 +134,9 @@
         </ul>
         {% endif %}
         
+              <div class="post-content" data-type-cleanup="true">
+                {{ post.content }}
+              </div>
               <a class="post-author" href="{{ site.base_url }}">
                 {% if post.author %}
                 <img src="{{ post.author.avatar }}" />
